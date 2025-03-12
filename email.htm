@@ -1,0 +1,95 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="ltr" lang="es"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta name="apple-mobile-web-app-title" content="WOL">
+    <meta name="application-name" content="WOL">
+    <meta name="theme-color" content="#799fcc">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+<TITLE>La Biblia Dinámica E-mail</TITLE>
+<link rel="shortcut icon" type="image/x-icon" href="clases/favicon.ico">
+<LINK rel=stylesheet type=text/css href="clases/mail.css" media="screen">
+<script type="text/javascript" language="JavaScript1.3" src="clases/common.js"></script>
+
+<SCRIPT type="text/javascript" LANGUAGE="JavaScript">
+function valid(){
+	if(document.callme.yourname.value == ""){
+		alert("Por favor, escríba su NOMBRE!");
+	  	document.callme.yourname.focus();
+   	return false;
+	}
+	if(document.callme.youremail.value == ""){
+		alert("Por favor, escríba su E-MAIL!");
+	  	document.callme.youremail.focus();
+   	return false;
+	}
+        if (document.callme.youremail.value.indexOf("@")<2){
+                alert(" Esta dirección de E-mail no es valida.\n Escriba por favor su dirección de Mail en este formato: \n         nombre@proveedor.xxx");
+                document.callme.youremail.focus();
+                return false;
+        }
+	if(document.callme.bemerkung.value == ""){
+		alert("Por favor, escríba la razón de SU MENSAJE en el campo inferior!");
+	  	document.callme.bemerkung.focus();
+   	return false;
+	}
+	if(document.callme.Telefon.value == ""){
+		alert("Por favor, escríba su TELÉFONO con el prefijo de su país, si desea que le llame!");
+	  	document.callme.Telefon.focus();
+   	return true;
+	}
+	var r1 = new RegExp("(@.*@)|(\\.\\.)|(@\\.)|(^\\.)");
+		var r2 = new RegExp("^.+\\@(\\[?)[a-zA-Z0-9\\-\\.]+\\.([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$");
+		vormals =document.callme.youremail.value;
+		vormals=document.callme.youremail.value=vormals.replace(/;/g,',');
+		vormals=document.callme.youremail.value=vormals.replace(/ /g,'');
+		vormals =document.callme.youremail.value+','+vormals;
+		jetzt ='"'+vormals.replace(/,/g,'","')+'"';
+		emails = eval('new Array('+jetzt+')');
+		for (i=0; i < emails.length; ++i){
+			if ((r1.test(emails[i])==false && r2.test(emails[i]) == false)|| emails[i].indexOf("@") < 2){
+				alert ('\"'+emails[i]+'\"\nEsta dirección de E-mail no es valida.')
+				return false;
+				break;
+			}
+		}
+	
+}
+</SCRIPT>
+
+<SCRIPT src="clases/focoform.js" type=text/javascript></SCRIPT>
+
+</HEAD><BODY id="bodyuni">
+
+<DIV ALIGN="center" id=masthead>
+<FORM id="form_granja" class="" Action="http://www.webmart.de/callme.cfm?do=mail&cmid=26513" encType="multipart/form-data" method="post" name="callme" onSubmit="return valid();">
+<TABLE CLASS="table1">
+	<TR><td align="center">
+<TABLE CLASS="table2" CELLPADDING=3.5 CELLSPACING=0>
+	<TR><TD CLASS="Headertitle" COLSPAN=1><BR>SOLICITUD<BR>DE CONTACTO<BR><HR></TD>
+<TD>
+<span class="headertext">Si desea que me ponga en contacto con usted para informarle<BR>o aclarar cualquier duda, rellene el presente formulario</span>
+<BR><span class="asterisco">Deben llenarse todos los espacios marcados con una flecha</span> (&nbsp;<span CLASS="flecha1"> &nbsp;)</span>
+</TD></TR>
+	<TR><TD CLASS="datos" ALIGN=RIGHT NOWRAP>Name - Nombre:</TD>
+	<TD CLASS="flecha"><INPUT TYPE=TEXT NAME="yourname" SIZE=50 MAXLENGTH=50 VALUE="Fuera de servicio" onfocus="addClass(this, 'search-term-focus')" onblur="removeClass(this, 'search-term-focus')"></TD></TR>
+	<TR><TD CLASS="datos" ALIGN=RIGHT NOWRAP>E-Mail:</TD>
+	<TD CLASS="flecha"><INPUT TYPE=TEXT NAME="youremail" SIZE=50 MAXLENGTH=100 VALUE="zz77z77zz@yahoo.es" onfocus="addClass(this, 'search-term-focus')" onblur="removeClass(this, 'search-term-focus')"></TD></TR>
+	<TR><TD CLASS="datos" ALIGN=RIGHT NOWRAP>Teléfono con prefijo:</TD>
+	<TD CLASS="flecha0"><INPUT TYPE=TEXT NAME="Telefon" SIZE=50 MAXLENGTH=255 VALUE="" onfocus="addClass(this, 'search-term-focus')" onblur="removeClass(this, 'search-term-focus')"></TD></TR>
+	<INPUT TYPE="hidden" NAME="category" VALUE="Leer">
+	<TR><TD CLASS="datos" VALIGN=TOP ALIGN=RIGHT>Mitteilung<BR>Noticias<BR>Note:</TD>
+	<TD CLASS="flecha"><TEXTAREA id="area" NAME="bemerkung" COLS=43 ROWS=6 WRAP="virtual" VALUE="" onfocus="addClass(this, 'search-term-focus')" onblur="removeClass(this, 'search-term-focus')">Este formulario esta de momento fuera de servicio, use por favor mi E-mail para contactar conmigo zz77z77zz@yahoo.es _______ Visite mi canal en Youtube: http://www.youtube.com/user/Jannis7777</TEXTAREA></TD></TR>
+	<TR><TD><DIV style="BACKGROUND: transparent; HEIGHT: 43px"></DIV></TD>
+	<TD><INPUT id="boton" TYPE="SUBMIT" VALUE="Enviar">&nbsp;&nbsp;<INPUT id="boton" TYPE=RESET VALUE="Borrar">
+<DIV style="BACKGROUND: transparent; HEIGHT: 10px"></DIV></TD></TR></TABLE></TD></TR></TABLE></FORM>
+<div id="chat"><A onclick="chat('chat.htm');return false" href="#" onmouseover="writetxt('Notas del Título')" onmouseout="writetxt(0)">Contacto inmediato por Chat</a></div>
+
+
+<div style="visibility:hidden;"><script type="text/javascript">rmt_ki101('8',130,'2uRWOexfCIq','baff00');</script></div>
+
+
+</DIV></BODY></HTML>

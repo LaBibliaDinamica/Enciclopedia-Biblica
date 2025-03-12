@@ -1,0 +1,308 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="ltr" lang="es"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta name="apple-mobile-web-app-title" content="WOL">
+    <meta name="application-name" content="WOL">
+    <meta name="theme-color" content="#799fcc">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+<TITLE>Conversor de Medidas</TITLE>
+<link rel="shortcut icon" type="image/x-icon" href="clases/favicon.ico">
+<META name="keywords" content="Biblia,Pentateuco,Deuterocanónicos,Libros históricos,Nuevo Testamento,Antiguo Testamento,Septuaginta,free bible software,free download,bible downloads,bible software,html bible,Public domain bibles,christian resources,spanish bible,El testamento viejo,el testamento nuevo,el cristiano,HTML,en línea,la Biblia,el Españoles(español),el Evangelio,old testament,biblia,dios,jesús,jesus, jesucristo,cristo,jehová,jehova,jehová dios,jehova dios,testigos de jehová,testigos de jehova, watchtower,atalaya,">
+
+<!-- SCRIPT FÜR DIE BILDER EXTRA FENSTER -->
+<link rel="stylesheet" type="text/css" href="clases/lightbox.css" media="screen">
+
+<SCRIPT LANGUAJE="JavaScript">
+<!-- // empieza el script
+marco = "";
+dirant = "";
+function extraeMarco(i) {
+	col = parent.frames[i].location.href.lastIndexOf("/") + 1;
+	lng = parent.frames[i].location.href.length;
+	marco = parent.frames[i].location.href.substring(col, lng);
+	return;
+}
+
+coef = new Array (9);
+coef[0] = 1000;
+coef[1] = 100;
+coef[2] = 10;
+coef[3] = 1;
+coef[4] = 0.1;
+coef[5] = 0.01;
+coef[6] = 0.001;
+coef[7] = 0.000002;
+coef[8] = 0.000001;
+function Es_Nulo( s ) {
+	for ( var i = 0; i < s.length; i++ )  {
+		var c = s.charAt( i );
+		if ( ( c != ' ' ) && ( c != '\n' ) && ( c != '\t' ) ) return false;
+	}
+	return true;
+}
+function Es_Num( n ) {
+	for ( var i = 0; i < n.length; i++ ) {
+		var c = n.charAt( i );
+		if ( !( ( c >= "0" &&  c <= "9" ) || c == "." ) ) return false;
+	}
+	return true;
+}
+function Posiciona( ) {
+	document.form.intro.focus();
+	document.form.intro.select( );
+	return;
+}
+function Verifica_Intro( ) {
+	if ( document.form.intro.value == null || document.form.intro.value == "" || Es_Nulo( document.form.intro.value ) ) {
+		alert( "Introduzca algún valor en la ventanilla 'Dato', por favor." );
+		Posiciona( );
+		return false;
+	}
+	if ( !( Es_Num( document.form.intro.value ) ) ) {
+		alert( "Debe introducir caracteres num&eacute;ricos." );
+		Posiciona( );
+		return false;
+	}
+	return true;
+}
+function Long_D( ) {
+	if ( Verifica_Intro( ) ) {
+		v = document.form.intro.value;
+		i1 = document.form.long1.selectedIndex;
+		i2 = document.form.long2.selectedIndex;
+		t1 = document.form.long1.options[i1].text.toLowerCase( );
+		t2 = document.form.long2.options[i2].text.toLowerCase( );
+		r = Math.round( v * document.form.long1.options[i2].value * coef[i1] * 1000 ) / 1000;
+		document.form.resul.value = v + " " + t1 + " = " + r + " " + t2;
+		Posiciona( );
+	}
+}
+function Long_I( ) {
+	if ( Verifica_Intro( ) ) {
+		v = document.form.intro.value;
+		i1 = document.form.long1.selectedIndex;
+		i2 = document.form.long2.selectedIndex;
+		t1 = document.form.long1.options[i1].text.toLowerCase( );
+		t2 = document.form.long2.options[i2].text.toLowerCase( );
+		r = Math.round( v * document.form.long2[i2].value * coef[i1] * 1000 ) / 1000;
+		document.form.resul.value = v + " " + t2 + " = " + r + " " + t1;
+		Posiciona( );
+	}
+}
+function Cap_D( ) {
+	if ( Verifica_Intro( ) ) {
+		v = document.form.intro.value;
+		i1 = document.form.cap1.selectedIndex;
+		i2 = document.form.cap2.selectedIndex;
+		t1 = document.form.cap1.options[i1].text.toLowerCase( );
+		t2 = document.form.cap2.options[i2].text.toLowerCase( );
+		r = Math.round( v * document.form.cap1[i2].value * coef[i1] * 1000 ) / 1000;
+		document.form.resul.value = v + " " + t1 + " = " + r + " " + t2;
+		Posiciona( );
+	}
+}
+function Cap_I( ) {
+	if ( Verifica_Intro( ) ) {
+		v = document.form.intro.value;
+		i1 = document.form.cap1.selectedIndex;
+		i2 = document.form.cap2.selectedIndex;
+		t1 = document.form.cap1.options[i1].text.toLowerCase( );
+		t2 = document.form.cap2.options[i2].text.toLowerCase( );
+		r = Math.round( v * document.form.cap2[i2].value * coef[i1] * 1000 ) / 1000;
+		document.form.resul.value = v + " " + t2 + " = " + r + " " + t1;
+		Posiciona( );
+	}
+}
+function Peso_D( ) {
+	if ( Verifica_Intro( ) ) {
+		v = document.form.intro.value;
+		i1 = document.form.peso1.selectedIndex;
+		i2 = document.form.peso2.selectedIndex;
+		t1 = document.form.peso1.options[i1].text.toLowerCase( );
+		t2 = document.form.peso2.options[i2].text.toLowerCase( );
+		r = Math.round( v * document.form.peso1.options[i2].value * coef[i1] * 1000 ) / 1000;
+		document.form.resul.value = v + " " + t1 + " = " + r + " " + t2;
+		Posiciona( );
+	}
+}
+function Peso_I( ) {
+	if ( Verifica_Intro( ) ) {
+		v = document.form.intro.value;
+		i1 = document.form.peso1.selectedIndex;
+		i2 = document.form.peso2.selectedIndex;
+		t1 = document.form.peso1.options[i1].text.toLowerCase( );
+		t2 = document.form.peso2.options[i2].text.toLowerCase( );
+		r = Math.round( v * document.form.peso2[i2].value * coef[i1] * 1000 ) / 1000;
+		document.form.resul.value = v + " " + t2 + " = " + r + " " + t1;
+		Posiciona( );
+	}
+}
+function Temp_D( ) {
+	if ( Verifica_Intro( ) ) {
+		v = document.form.intro.value;
+		i1 = document.form.temp1.selectedIndex;
+		i2 = document.form.temp2.selectedIndex;
+		t1 = document.form.temp1.options[i1].text;
+		t2 = document.form.temp2.options[i2].text;
+		r = Math.round( ( 9 * v / 5 + 32 ) * 10 ) / 10;
+		document.form.resul.value = v + t1 + " = " + r + t2;
+		Posiciona( );
+	}
+}
+function Temp_I( ) {
+	if ( Verifica_Intro( ) ) {
+		v = document.form.intro.value;
+		i1 = document.form.temp1.selectedIndex;
+		i2 = document.form.temp2.selectedIndex;
+		t1 = document.form.temp1.options[i1].text;
+		t2 = document.form.temp2.options[i2].text;
+		r = Math.round( ( 5 * ( v - 32 ) / 9 ) * 10 ) / 10;
+		document.form.resul.value = v + t2 + " = " + r + t1;
+		Posiciona( );
+	}
+}
+// fin del script -->
+</SCRIPT>
+
+<script type="text/javascript" language="JavaScript1.3" src="clases/common.js"></script> 
+
+<script type="text/javascript" src="clases/Global.js"></script>
+
+<script> 
+<!--
+ onload = function(){document.getElementById('goo').q.focus(); document.getElementById('goo').q.select()}
+//-->
+</script>
+
+</head><body id="bodyuni">
+
+
+
+<!-- 1 div. Vanderines celestes de notas - 2 div. Menus opcionales-->
+<div id="popmenu" class="menuskin" onMouseover="clearhidemenu();highlightmenu(event,'on')" onMouseout="highlightmenu(event,'off');dynamichide(event)"></div>
+
+<header id="header" class="header header--fixed hide-from-print slide headroom--not-top slide--reset" role="banner">
+
+
+<div style="margin-top:35px"></div>
+<!-- Menu-->
+<script type="text/javascript" src="clases/Global-2.js"></script></DIV>
+
+<div style="margin-top:65px"></div>
+
+
+<!-- Conversión de medidas -->
+<div class="cleardiv"><button class="accordion" onmouseover="writetxt('<img class=desple>')" onmouseout="writetxt(0)"><a name="medidas">Conversión de medidas</A><B class="aa">&nbsp;</B></button><div class="panel"><p>
+
+
+<FORM name=form>
+<CENTER><B onMouseover="showmenu(event,linkset[452])" onMouseout="delayhidemenu()">Dato</B>:<BR>
+
+<INPUT name=intro type="text" class="input" size="10" style="text-align:center; Font-weight:bold; Font-Size:12px; color: #9c4310;"> 
+      <BR><B>Resultado</B>: <BR><TEXTAREA cols=40 name=resul rows=0,1 wrap=virtual></TEXTAREA> 
+    </FONT></P></TD>
+    <TD align=middle><FONT face="Comic Sans MS, Arial"><B>Longitud</B> 
+
+<SELECT name=long1> <OPTION 
+              value=39.37>Milímetros<OPTION value=3.2808>Centímetros<OPTION 
+              value=1.0936>Decímetros<OPTION selected 
+              value=0.54681>Metros<OPTION value=621.37>Decámetros<OPTION 
+              value=539.96>Hectómetros<OPTION 
+            value=539.61>Kilómetros</OPTION></SELECT> <B><INPUT id="rk22" onclick="Long_D( )" type=button></B></TD>
+          <B><INPUT id="rk20" onclick="Long_I( )" type=button></B> 
+            <SELECT name=long2> <OPTION selected value=0.0254>Pulgadas<OPTION 
+              value=0.3048>Pies<OPTION value=0.9144>Yardas<OPTION 
+              value=1.8288>Brazas<OPTION value=1609.344>Millas terrestres<OPTION 
+              value=1852>Millas náuticas (int.)<OPTION value=1853.184>Millas 
+              náuticas (UK)</OPTION></SELECT>
+
+<P><ul class="links"><li class="line"></li></ul>
+
+      <B>Capacidad</B> 
+<SELECT name=cap1>
+<OPTION value=2.1134>Mililitros
+<OPTION value=1.7598>Centilitros
+<OPTION value=0.2642>Decilitros
+<OPTION selected value=0.21997>Litros
+<OPTION value=283.8>Decalitros
+<OPTION value=275>Hectolitros
+<OPTION value=0>Kilolitros</OPTION></SELECT> 
+<B><INPUT onclick="Cap_D( )" type=button id="rk22"></B>
+<B><INPUT onclick="Cap_I( )" type=button id="rk20"></B> 
+<SELECT name=cap2>
+<OPTION value=0.473176>Pintas (USA)
+<OPTION value=0.568261>Pintas (UK)
+<OPTION selected value=3.78541>Galones (USA)
+<OPTION value=4.54609>Galones (UK)
+<OPTION value=35.24>Bushels (USA)
+<OPTION value=36.37>Bushels (UK)</OPTION></SELECT> 
+
+<P><ul class="links"><li class="line"></li></ul>
+
+      <B>Peso</B> 
+<SELECT name=peso1> <OPTION 
+              value=0.03527>Miligramos<OPTION value=0.03215>Centigramos<OPTION 
+              value=2204.62>Decigramos<OPTION  
+              value=2009.5>Gramos<OPTION value=157>Decagramos<OPTION 
+              value=79>Hectogramos<OPTION selected value=1102310>Kilogramos<OPTION 
+              value=984207>Quintales métricos<OPTION value="">Toneladas 
+              métricas</OPTION></SELECT> <B><INPUT onclick="Peso_D( )" type=button id="rk22"></B> </FONT></TD>
+          <B><INPUT onclick="Peso_I( )" type=button id="rk20"></B> 
+            <SELECT name=peso2> <OPTION selected value=28.3495>Onzas 
+              (avoirdupois)<OPTION value=31.1035>Onzas (troy)<OPTION 
+              value=453.6>Libras (avoirdupois)<OPTION value=497.7>Libras 
+              (troy)<OPTION value=6350>Stones<OPTION value=12701>Quarter<OPTION 
+              value=907185>Toneladas (USA)<OPTION value=1016047>Toneladas 
+              (UK)</OPTION></SELECT>
+
+<P><ul class="links"><li class="line"></li></ul>
+
+      <B>Temperatura</B> 
+     <SELECT name=temp1> <OPTION selected 
+              value=0>º C</OPTION></SELECT> <B><INPUT onclick="Temp_D( )" type=button id="rk22"></B> </FONT></TD>
+          <B><INPUT onclick="Temp_I( )" type=button id="rk20"></B> 
+            <SELECT name=temp2> <OPTION selected value=0>º F</OPTION></SELECT> 
+            </CENTER></FORM>
+	</form></div></div>
+
+
+
+<ul class="links">
+    <li class="line"></li>
+
+    <li><a onclick="genea('Ap.htm#8D');return false" href="#" onmouseover="writetxt('Consulte la Calculadora')" onmouseout="writetxt(0)"><span class="cal">Consulte la Calculadora</span></A></li>
+    <li class="line"></li>
+
+    <li><a onclick="notas('Ap.htm#8C ');return false" href="#" onmouseover="writetxt('Conversión de Números romanos')" onmouseout="writetxt(0)"><span class="cal">Conversión de Números romanos</span></A></li>
+    <li class="line"></li>
+    <li><a onclick="notas('ABC-6.htm#Pesos');return false" href="#" onmouseover="writetxt('Dinero, pesos, medidas')" onmouseout="writetxt(0)"><span class="pm">Dinero, pesos, medidas</span></A></li>
+    <li class="line"></li>
+    <li><a onclick="notas('Fechas.htm');return false" href="#" onmouseover="writetxt('Fechas Memorables')" onmouseout="writetxt(0)"><span class="fe">Fechas Memorables</span></A></li>
+    <li class="line"></li>
+    <li><a onclick="notas('Gl-N.htm#numeros');return false" href="#" onmouseover="writetxt('Los números de la Biblia y su Simbolismo')" onmouseout="writetxt(0)"><span class="cal">Números y su Simbolismo</span></A></li>
+    <li class="line"></li>
+    <li><a onclick="notas('hora.htm');return false" href="#" onmouseover="writetxt('La medición del Tiempo')" onmouseout="writetxt(0)"><span class="ho">¿Qué hora era?</span></A></li>
+    <li class="line"></li>
+    <li><a onclick="notas('Ap.htm#8A');return false" href="#" onmouseover="writetxt('8A - Dinero, pesos, medidas')" onmouseout="writetxt(0)"><span class="ap">8A - Dinero, pesos, medidas</span></A></li>
+    <li class="line"></li>
+    <li><a onclick="notas('pdf/it/nwt-B14-Pg.1897.pdf');return false" href="#" onmouseover="writetxt('Las medidas y el dinero')" onmouseout="writetxt(0)"><span class="no">Medidas y Dinero - (nwt-Pg.1897)</span></A></li>
+    <li class="line"></li>
+</ul></div>
+
+ 		
+<!-- Esconde el menu al ir para abajo y lo enseña al ir para arriba - Meter el menu en el espacio header -->
+    <script src="clases/main1.js"></script>
+
+<!-- Nuevas cajas plegables de artículos grandes - 21.12.18 - script: accordion1.js - en proyecto  -->
+<script type="text/javascript" language="JavaScript1.3" src="clases/accordion1.js"></script>
+
+<!-- Sidebar de lenguetas a la derecha con: jquery.min.js y likebox.js en common.js  -->
+<div id="likebox_1" style="top:100px;"><div id="likebox_1_1"><img src="clases/biblia.png" alt=""><iframe src="Indice.htm"></iframe></div></div>
+
+<div style="visibility:hidden;"><script type="text/javascript" src="//ra.revolvermaps.com/0/0/5.js?i=0v0sf9cfvi6&amp;m=0&amp;c=ff0000&amp;cr1=ffffff" async="async"></script></div>
+
+<DIV onmouseover="writetxt('<IMG src=images/direccion.jpg height=131><LI>&nbsp;</LI>Imprima la Tarjeta de la Biblia Din@mica')" onmouseout="writetxt(0)"><SCRIPT type="text/javascript" src="clases/copy.js"></SCRIPT></DIV></body></html>

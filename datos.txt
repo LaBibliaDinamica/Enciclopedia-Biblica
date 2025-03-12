@@ -1,0 +1,9 @@
+{
+    "nombre": "Biblia",
+    "autor": "Moisés",
+    "capitulos": [
+        "Génesis",
+        "Éxodo",
+        "Levítico"
+    ]
+}

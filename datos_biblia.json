@@ -1,0 +1,27 @@
+[
+    {
+        "type": "verse",
+        "book": "genesis",
+        "text": "En el principio creó Dios los cielos y la tierra"
+    },
+    {
+        "type": "verse",
+        "book": "exodus",
+        "text": "Yo soy el Señor tu Dios, que te saqué de la tierra de Egipto"
+    },
+    {
+        "type": "topic",
+        "book": "genesis",
+        "text": "La creación del mundo"
+    },
+    {
+        "type": "verse",
+        "book": "salmos",
+        "text": "El Señor es mi pastor, nada me faltará"
+    },
+    {
+        "type": "topic",
+        "book": "mateo",
+        "text": "El sermón del monte"
+    }
+]
