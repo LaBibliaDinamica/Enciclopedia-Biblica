@@ -1,0 +1,230 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="ltr" lang="es"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta name="apple-mobile-web-app-title" content="WOL">
+    <meta name="application-name" content="WOL">
+    <meta name="theme-color" content="#799fcc">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+<TITLE>Mapa 3</TITLE>
+<link rel="shortcut icon" type="image/x-icon" href="clases/favicon.ico">
+<link rel="icon" type="image/ico" href="clases/favicon.ico">
+<link rel="icon" href="clases/icon_favicon.gif" />
+<link rel=icon type=image/png href=clases/ico/icono.ico>
+<link rel=apple-touch-icon-precomposed sizes=76x76 href=clases/ico/logo-bibliadinamica-76X76.png>
+<link rel=apple-touch-icon-precomposed sizes=120x120 href=clases/ico/logo-bibliadinamica-120X120.png>
+<link rel=apple-touch-icon-precomposed sizes=152x152 href=clases/ico/logo-bibliadinamica-152X152.png>
+<link rel=apple-touch-icon-precomposed sizes=114x114 href=clases/ico/logo-bibliadinamica-114X114.png>
+<link rel=apple-touch-icon-precomposed sizes=144x144 href=clases/ico/logo-bibliadinamica-144X144.png>
+
+<META name="keywords" content="Biblia,Pentateuco,Deuterocanónicos,Libros históricos,Nuevo Testamento,Antiguo Testamento,Septuaginta,free bible software,free download,bible downloads,bible software,html bible,Public domain bibles,christian resources,spanish bible,El testamento viejo,el testamento nuevo,el cristiano,HTML,en línea,la Biblia,el Españoles(español),el Evangelio,old testament,biblia,dios,jesús,jesus, jesucristo,cristo,jehová,jehova,jehová dios,jehova dios,testigos de jehová,testigos de jehova, watchtower,atalaya,Topografía de la Tierra Prometida">
+
+<div id="likebox_1" style="top:100px;"><div id="likebox_1_1"><img src="clases/biblia.png" alt=""><iframe src="Indice.htm"></iframe></div></div>
+
+<!-- SCRIPT FÜR DIE BILDER EXTRA FENSTER -->
+<link rel="stylesheet" type="text/css" href="clases/lightbox.css" media="screen">
+
+<!-- SCRIPT FÜR DIE INTERACTIVEN KARTE UND BLAUEN PHANEN -->
+<script type="text/javascript" language="JavaScript1.3" src="clases/poplink.js"></script>
+<script type="text/javascript" language="JavaScript1.3" src="clases/ventanillas.js"></script>
+<script type="text/javascript" language="JavaScript1.3" src="clases/jquery.min.js"></script>
+<script type="text/javascript" language="JavaScript1.3" src="clases/likebox.js"></script>
+
+<Style>
+body {
+    margin: 0;
+    overflow: hidden;
+}
+</Style>
+
+<!-- Vanderin de Referenztexte -->  
+<script type="text/javascript" src="clases/Global.js"></script>
+
+<!-- SCRIPT FÜR ZOOM -->
+<script language="JavaScript1.2">
+//Image zoom in/out script- by javascriptkit.com
+//Visit JavaScript Kit (http://www.javascriptkit.com) for script
+var zoomfactor=0.05 //Enter factor (0.05=5%)
+function zoomhelper(){
+if (parseInt(whatcache.style.width)>10&&parseInt(whatcache.style.height)>10){
+whatcache.style.width=parseInt(whatcache.style.width)+parseInt(whatcache.style.width)*zoomfactor*prefix
+whatcache.style.height=parseInt(whatcache.style.height)+parseInt(whatcache.style.height)*zoomfactor*prefix
+}
+}
+function zoom(originalW, originalH, what, state){
+if (!document.all&&!document.getElementById)
+return
+whatcache=eval("document.images."+what)
+prefix=(state=="in")? 1 : -1
+if (whatcache.style.width==""||state=="restore"){
+whatcache.style.width=originalW+"px"
+whatcache.style.height=originalH+"px"
+if (state=="restore")
+return
+}
+else{
+zoomhelper()
+}
+beginzoom=setInterval("zoomhelper()",100)
+}
+function clearzoom(){
+if (window.beginzoom)
+clearInterval(beginzoom)
+}
+</script>
+
+</head><body>
+
+<!-- 1 div. Vanderines celestes de notas - 2 div. Menus opcionales-->
+<div id="navtxt" class="navtext" style="position:absolute; top:-100px; left:0px; visibility:hidden"></div>
+<div id="popmenu" class="menuskin" onMouseover="clearhidemenu();highlightmenu(event,'on')" onMouseout="highlightmenu(event,'off');dynamichide(event)"></div>
+<div class="sidebar"><a href=Indice.htm onclick="indice(this.href);return false" onMouseover="showmenu(event,linkset[1])" onMouseout="delayhidemenu()"></a></div>
+<div class="kopf"><a href=Indice.htm onclick="indice(this.href);return false"></a></div>
+
+<TABLE class=indent cellSpacing=0 cellPadding=0 summary="Page Table" border=0 align=center>
+ <TBODY><TR><TD vAlign=top align=middle width="100%">
+<DIV align=center><IMG height=639 width=800 alt="" name="myimage" src="images/1n5.jpg" useMap=#Map><MAP name=Map>
+
+
+<!-- CIUDADES -->
+
+	<AREA name="Beer-seba" onmouseover="writetxt('<b>Beer-seba</b><BR><i>(Pozo del Juramento, o: Pozo de Siete)</i><LI>&nbsp;</LI>Lugar del S. de Judá donde hubo un pozo y tiempo después se construyó una ciudad. Se encuentra a medio camino entre la costa del mar Mediterráneo y el extremo meridional del mar Muerto, a unos 45 Km. al SO. de Hebrón y más o menos a la misma distancia al SE. de Gaza. . .')" onmouseout="writetxt(0)" shape=rect coords=448,387,484,395 href=Ciu-V.htm#Beer-seba onclick="ventana(this.href);return false">
+
+	<AREA name="Dan3" onmouseover="writetxt('<b>Dan 3</b><LI>&nbsp;</LI>Ciudad situada en el extremo septentrional de Palestina. Antes de que la tomara la tribu de Dan, sus habitantes paganos la llamaban Lésem o Lais...')" onmouseout="writetxt(0)" shape=rect coords=124,127,142,119 href=Pers-XX.htm#Dan3 onclick="ventana(this.href);return false">
+
+	<AREA name="Jerusalen" onmouseover="writetxt('<IMG src=images/9nisan.jpg class=bild><b>Jerusalén</b><BR><i>(Posesión [o: Fundamento] de Paz Doble)</i><LI>&nbsp;</LI>Ciudad que fue capital de la antigua nación de Israel a partir del año 1070 a. E.C. Después de la división de la nación en dos reinos (997 a. E.C.), continuó siendo la capital del reino meridional de Judá. En las Escrituras aparecen más de 800 referencias a Jerusalén.')" onmouseout="writetxt(0)" shape=rect coords=378,284,414,294 href=Ciu-V.htm#Jerusalen onclick="ventana(this.href);return false">
+
+
+
+<!-- RIOS - MARES - LAGOS  -->
+
+	<AREA name="GalileaM" onmouseover="writetxt('<IMG src=images/storm.jpg class=bild><b>D-2 REGIÓN ALREDEDOR DEL MAR DE GALILEA</b><LI>&nbsp;</LI>Lago interior de agua dulce que se encuentra en la parte N. de Palestina y al que también se ha llamado mar de Kinéret (Nú 34:11), lago de Genesaret (Lu 5:1) y mar de Tiberíades (Jn 6:1). . .')" onmouseout="writetxt(0)" shape=circle coords=210,168,7 href=Ciu-V.htm#GalileaM onclick="ventana(this.href);return false">
+
+	<AREA name="GalileaM" onmouseover="writetxt('<IMG src=images/storm.jpg class=bild><b>Mar de Galilea</b><LI>&nbsp;</LI>Lago interior de agua dulce que se encuentra en la parte N. de Palestina y al que también se ha llamado mar de Kinéret (Nú 34:11), lago de Genesaret (Lu 5:1) y mar de Tiberíades (Jn 6:1). . .')" onmouseout="writetxt(0)" shape=poly coords=190,168,197,160,214,161,240,173,240,180,229,180,215,174,198,175 href=Ciu-V.htm#GalileaM onclick="ventana(this.href);return false">
+
+	<AREA name="GalileaM" onmouseover="writetxt('<IMG src=images/storm.jpg class=bild><b>Mar de Galilea</b><LI>&nbsp;</LI>Lago interior de agua dulce que se encuentra en la parte N. de Palestina y al que también se ha llamado mar de Kinéret (Nú 34:11), lago de Genesaret (Lu 5:1) y mar de Tiberíades (Jn 6:1). . .')" onmouseout="writetxt(0)" shape=rect coords=625,67,769,76 href=Ciu-V.htm#GalileaM onclick="ventana(this.href);return false">
+
+	<AREA name="Jordan" onmouseover="writetxt('<IMG src=images/naaman.jpg class=bild><b>Rio Jordán</b><LI>&nbsp;</LI>Río principal de la Tierra Prometida que forma una frontera natural entre la mayor parte del E. y el O. de Palestina. . .')" onmouseout="writetxt(0)" shape=poly coords=252,175,483,263,462,276,237,183 href=Ciu-V.htm#Jordan onclick="ventana(this.href);return false">
+
+
+
+<!-- MONTAÑAS - Desiertos  -->
+
+	<AREA name="MoHermon" onmouseover="writetxt('<b>El monte Hermón</b><BR><i>(Cosa Dedicada; Cosa Prohibida)</i><LI>&nbsp;</LI>El monte Hermón es la montaña más alta de las inmediaciones de Palestina. . .')" onmouseout="writetxt(0)" shape=poly coords=283,1,453,1,454,120,283,120,283,93,126,93,126,71,283,71 href=Ciu-III.htm#Hermon onclick="ventana(this.href);return false">
+
+	<AREA name="A" onmouseover="writetxt('<b>A. LITORAL DEL MAR GRANDE (Mar Mediterráneo)</b><LI>&nbsp;</LI>La gran masa de agua comprendida entre Europa, al N.; Asia, al E., y África, al S. Los hebreos la llamaban mar Grande, pero actualmente se la conoce por su nombre derivado del latín, Mediterráneo, que significa “[que se halla] en medio de tierra”, pues está prácticamente rodeada de tierra. . .')" onmouseout="writetxt(0)" shape=poly coords=84,632,247,539,289,497,308,460,300,403,244,327,153,260,1,143,3,632  href=Ciu-XV.htm#GrandeM onclick="ventana(this.href);return false">
+
+	<AREA name="A" onmouseover="writetxt('<b>A. LITORAL DEL MAR GRANDE</b><LI>&nbsp;</LI>A causa de las grandes extensiones de dunas o médanos, el único puerto natural bueno más abajo del monte Carmelo se encuentra en Jope; pero al norte del Carmelo hay varios puertos naturales útiles. . .')" onmouseout="writetxt(0)" shape=rect coords=461,16,618,29 href=Ciu-XV.htm#GrandeM onclick="ventana(this.href);return false">
+
+	<AREA name="B1" onmouseover="writetxt('<b>B-1 LLANURA DE ASER</b><LI>&nbsp;</LI>Esta llanura costera se extiende hacia el norte desde el monte Carmelo por unos 40 kilómetros (25 millas). Su mayor anchura es de unos 13 kilómetros (8 millas), y es parte de la tierra que se asignó a la tribu de Aser. . .')" onmouseout="writetxt(0)" shape=circle coords=83,192,7 href=Pers-XXI.htm#Aser2-1-1 onclick="ventana(this.href);return false">
+
+	<AREA name="B1" onmouseover="writetxt('<b>B-1 LLANURA DE ASER</b><LI>&nbsp;</LI>Esta llanura costera se extiende hacia el norte desde el monte Carmelo por unos 40 kilómetros (25 millas). Su mayor anchura es de unos 13 kilómetros (8 millas), y es parte de la tierra que se asignó a la tribu de Aser. . .')" onmouseout="writetxt(0)" shape=rect coords=462,38,618,49 href=Pers-XXI.htm#Aser2-1-1 onclick="ventana(this.href);return false">
+
+	<AREA name="B2" onmouseover="writetxt('<b>B-2 LA FRANJA COSTERA DE DOR</b><LI>&nbsp;</LI>Esta franja de tierra linda con la cordillera del Carmelo por unos 32 kilómetros (20 millas). Solo mide unos 4 kilómetros (2,5 millas) de ancho. En realidad es una franja costera de tierra que está entre el Carmelo y el Mediterráneo. . .')" onmouseout="writetxt(0)" shape=circle coords=135,233,7 href=Ciu-V.htm#DorB2 onclick="ventana(this.href);return false">
+
+	<AREA name="B2" onmouseover="writetxt('<b>B-2 LA FRANJA COSTERA DE DOR</b><LI>&nbsp;</LI>Esta franja de tierra linda con la cordillera del Carmelo por unos 32 kilómetros (20 millas). Solo mide unos 4 kilómetros (2,5 millas) de ancho. En realidad es una franja costera de tierra que está entre el Carmelo y el Mediterráneo. . .')" onmouseout="writetxt(0)" shape=rect coords=462,48,618,59 href=Ciu-V.htm#DorB2 onclick="ventana(this.href);return false">
+
+	<AREA name="B3" onmouseover="writetxt('<b>B-3 DEHESAS DE SARÓN</b><LI>&nbsp;</LI>Llanura marítima situada entre la llanura de Dor (al S. del Carmelo) y la de Filistea. . .')" onmouseout="writetxt(0)" shape=circle coords=214,267,7 href=Ciu-XIII.htm#Saron1-1-1 onclick="ventana(this.href);return false">
+
+	<AREA name="B3" onmouseover="writetxt('<b>B-3 DEHESAS DE SARÓN</b><LI>&nbsp;</LI>Llanura marítima situada entre la llanura de Dor (al S. del Carmelo) y la de Filistea. . .')" onmouseout="writetxt(0)" shape=rect coords=462,52,618,67 href=Ciu-XIII.htm#Saron1-1-1 onclick="ventana(this.href);return false">
+
+	<AREA name="B4" onmouseover="writetxt('<b>B-4 LLANURA DE FILISTEA</b><LI>&nbsp;</LI>Esta sección de tierra está al sur de las dehesas de Sarón y se extiende unos 80 kilómetros (50 millas) a lo largo de la costa y cerca de 24 kilómetros (15 millas) tierra adentro. . .')" onmouseout="writetxt(0)" shape=circle coords=309,364,7 href=Ciu-VI.htm#FilisteaB4 onclick="ventana(this.href);return false">
+
+	<AREA name="B4" onmouseover="writetxt('<b>B-4 LLANURA DE FILISTEA</b><LI>&nbsp;</LI>Esta sección de tierra está al sur de las dehesas de Sarón y se extiende unos 80 kilómetros (50 millas) a lo largo de la costa y cerca de 24 kilómetros (15 millas) tierra adentro. . .')" onmouseout="writetxt(0)" shape=rect coords=462,66,618,76 href=Ciu-VI.htm#FilisteaB4 onclick="ventana(this.href);return false">
+
+	<AREA name="B5" onmouseover="writetxt('<b>B-5a VALLE CENTRAL DE ESTE A OESTE</b><LI>&nbsp;</LI>En realidad el valle central de este a oeste se compone de dos partes, la llanura-valle de Meguidó, o Esdrelón, al oeste, y la llanura baja de Jezreel al este. . .')" onmouseout="writetxt(0)" shape=rect coords=462,76,618,86 href=Ciu-XIII.htm#Meguido-3 onclick="ventana(this.href);return false">
+
+	<AREA name="B5" onmouseover="writetxt('<b>B-5a VALLE CENTRAL DE ESTE A OESTE</b><LI>&nbsp;</LI>En realidad el valle central de este a oeste se compone de dos partes, la llanura-valle de Meguidó, o Esdrelón, al oeste, y la llanura baja de Jezreel al este. . .')" onmouseout="writetxt(0)" shape=circle coords=175,212,8 href=Ciu-XIII.htm#Meguido-3 onclick="ventana(this.href);return false">
+
+	<AREA name="B5" onmouseover="writetxt('<b>B-5a VALLE CENTRAL DE ESTE A OESTE</b><LI>&nbsp;</LI>En realidad el valle central de este a oeste se compone de dos partes, la llanura-valle de Meguidó, o Esdrelón, al oeste, y la llanura baja de Jezreel al este. . .')" onmouseout="writetxt(0)" shape=rect coords=462,86,618,95 href=Ciu-XIII.htm#Meguido-3 onclick="ventana(this.href);return false">
+
+	<AREA name="B5" onmouseover="writetxt('<b>B-5b VALLE CENTRAL DE ESTE A OESTE</b><LI>&nbsp;</LI>En realidad el valle central de este a oeste se compone de dos partes, la llanura-valle de Meguidó, o Esdrelón, al oeste, y la llanura baja de Jezreel al este. . .')" onmouseout="writetxt(0)" shape=circle coords=211,214,8 href=Ciu-XIII.htm#Meguido-3 onclick="ventana(this.href);return false">
+
+	<AREA name="B5" onmouseover="writetxt('<b>B-5b VALLE CENTRAL DE ESTE A OESTE</b><LI>&nbsp;</LI>En realidad el valle central de este a oeste se compone de dos partes, la llanura-valle de Meguidó, o Esdrelón, al oeste, y la llanura baja de Jezreel al este. . .')" onmouseout="writetxt(0)" shape=rect coords=462,96,618,105 href=Ciu-XIII.htm#Meguido-3 onclick="ventana(this.href);return false">
+
+	<AREA name="C1" onmouseover="writetxt('<b>C-1 COLINAS DE GALILEA</b><LI>&nbsp;</LI>Fue en la sección sur de las colinas de Galilea (y alrededor del mar de Galilea) donde Jesús hizo la mayor parte de su obra de dar testimonio acerca del nombre y el Reino de Jehová. . .')" onmouseout="writetxt(0)" shape=circle coords=128,158,7 href=Ciu-V.htm#GalileaCo onclick="ventana(this.href);return false">
+
+	<AREA name="C1" onmouseover="writetxt('<b>C-1 COLINAS DE GALILEA</b><LI>&nbsp;</LI>Fue en la sección sur de las colinas de Galilea (y alrededor del mar de Galilea) donde Jesús hizo la mayor parte de su obra de dar testimonio acerca del nombre y el Reino de Jehová. . .')" onmouseout="writetxt(0)" shape=rect coords=464,115,617,125 href=Ciu-V.htm#GalileaCo onclick="ventana(this.href);return false">
+
+	<AREA name="C2" onmouseover="writetxt('<b>C-2 COLINAS DEL CARMELO</b><LI>&nbsp;</LI>La estribación del monte Carmelo sobresale majestuosamente hacia el mar Mediterráneo. El Carmelo es realmente una cordillera montuosa, de unos 48 kilómetros (30 millas) de largo, que se eleva hasta 545 metros (1.790 pies) sobre el nivel del mar. . .')" onmouseout="writetxt(0)" shape=circle coords=121,217,7 href=Ciu-VIII.htm#Carmelo1-1-1 onclick="ventana(this.href);return false">
+
+	<AREA name="C2" onmouseover="writetxt('<b>C-2 COLINAS DEL CARMELO</b><LI>&nbsp;</LI>La estribación del monte Carmelo sobresale majestuosamente hacia el mar Mediterráneo. El Carmelo es realmente una cordillera montuosa, de unos 48 kilómetros (30 millas) de largo, que se eleva hasta 545 metros (1.790 pies) sobre el nivel del mar. . .')" onmouseout="writetxt(0)" shape=rect coords=462,124,618,135 href=Ciu-VIII.htm#Carmelo1-1-1 onclick="ventana(this.href);return false">
+
+	<AREA name="C3" onmouseover="writetxt('<b>C-3 COLINAS DE SAMARIA</b><LI>&nbsp;</LI>La parte sur de esta región es la más montuosa, pues se eleva a más de 900 metros (3.000 pies) en el este. . .')" onmouseout="writetxt(0)" shape=circle coords=314,245,7 href=Ciu-II.htm#Samaria2Co onclick="ventana(this.href);return false">
+
+	<AREA name="C3" onmouseover="writetxt('<b>C-3 COLINAS DE SAMARIA</b><LI>&nbsp;</LI>La parte sur de esta región es la más montuosa, pues se eleva a más de 900 metros (3.000 pies) en el este. . .')" onmouseout="writetxt(0)" shape=rect coords=465,135,622,144 href=Ciu-II.htm#Samaria2Co onclick="ventana(this.href);return false">
+
+	<AREA name="C4" onmouseover="writetxt('<b>C-4 SEFELÁ</b><BR><I>(Tierra Baja).</I><LI>&nbsp;</LI>Aunque el nombre Sefelá significa “Tierra Baja”, realmente es una zona montuosa que alcanza una altitud de unos 450 metros (1.500 pies). . .')" onmouseout="writetxt(0)" shape=circle coords=390,334,7 href=Ciu-VII.htm#Sefela onclick="ventana(this.href);return false">
+
+	<AREA name="C4" onmouseover="writetxt('<b>C-4 SEFELÁ</b><BR><I>(Tierra Baja).</I><LI>&nbsp;</LI>Aunque el nombre Sefelá significa “Tierra Baja”, realmente es una zona montuosa que alcanza una altitud de unos 450 metros (1.500 pies). . .')" onmouseout="writetxt(0)" shape=rect coords=473,143,615,153 href=Ciu-VII.htm#Sefela onclick="ventana(this.href);return false">
+
+	<AREA name="C5" onmouseover="writetxt('<b>C-5 LA ZONA DE COLINAS DE JUDÁ</b><LI>&nbsp;</LI>Esta es una elevada zona rocosa de unos 80 kilómetros (50 millas) de largo y menos de 32 kilómetros (20 millas) de ancho, con elevaciones que varían desde 600 metros (2.000 pies) hasta más de 1.000 metros (3.300 pies) sobre el nivel del mar. . .')" onmouseout="writetxt(0)" shape=circle coords=449,316,7 href=Pers-XX.htm#Juda10 onclick="ventana(this.href);return false">
+
+	<AREA name="C5" onmouseover="writetxt('<b>C-5 LA ZONA DE COLINAS DE JUDÁ</b><LI>&nbsp;</LI>Esta es una elevada zona rocosa de unos 80 kilómetros (50 millas) de largo y menos de 32 kilómetros (20 millas) de ancho, con elevaciones que varían desde 600 metros (2.000 pies) hasta más de 1.000 metros (3.300 pies) sobre el nivel del mar. . .')" onmouseout="writetxt(0)" shape=rect coords=474,153,616,164 href=Pers-XX.htm#Juda10 onclick="ventana(this.href);return false">
+
+	<AREA name="C6" onmouseover="writetxt('<b>C-6 DESIERTO DE JUDÁ (JESIMÓN)</b><LI>&nbsp;</LI>Jesimón es el nombre bíblico para el desierto de Judá. Significa “Desierto”. . .')" onmouseout="writetxt(0)" shape=circle coords=490,306,7 href=Pers-XX.htm#Juda10 onclick="ventana(this.href);return false">
+
+	<AREA name="C6" onmouseover="writetxt('<b>C-6 DESIERTO DE JUDÁ (JESIMÓN)</b><LI>&nbsp;</LI>Jesimón es el nombre bíblico para el desierto de Judá. Significa “Desierto”. . .')" onmouseout="writetxt(0)" shape=rect coords=621,17,770,28 href=Pers-XX.htm#Juda10 onclick="ventana(this.href);return false">
+
+	<AREA name="C7" onmouseover="writetxt('<b>C-7 NÉGUEB</b><LI>&nbsp;</LI>Al sur de las colinas de Judá está el Négueb, donde moraron por muchos años los patriarcas Abrahán e Isaac. . .')" onmouseout="writetxt(0)" shape=circle coords=583,404,7 href=Ciu-III.htm#Negueb onclick="ventana(this.href);return false">
+
+	<AREA name="C7" onmouseover="writetxt('<b>C-7 NÉGUEB</b><LI>&nbsp;</LI>Al sur de las colinas de Judá está el Négueb, donde moraron por muchos años los patriarcas Abrahán e Isaac. . .')" onmouseout="writetxt(0)" shape=rect coords=621,27,770,37 href=Ciu-III.htm#Negueb onclick="ventana(this.href);return false">
+
+	<AREA name="C8" onmouseover="writetxt('<b>C-8 DESIERTO DE PARÁN</b><LI>&nbsp;</LI>Al sur del Négueb y junto al desierto de Zin está el desierto de Parán. Al salir de Sinaí, los israelitas cruzaron este desierto en camino a la Tierra Prometida, y desde Parán envió Moisés a los 12 espías. . .')" onmouseout="writetxt(0)" shape=circle coords=586,548,7 href=Ciu-IV.htm#Paran onclick="ventana(this.href);return false">
+
+	<AREA name="C8" onmouseover="writetxt('<b>C-8 DESIERTO DE PARÁN</b><LI>&nbsp;</LI>Al sur del Négueb y junto al desierto de Zin está el desierto de Parán. Al salir de Sinaí, los israelitas cruzaron este desierto en camino a la Tierra Prometida, y desde Parán envió Moisés a los 12 espías. . .')" onmouseout="writetxt(0)" shape=rect coords=623,37,768,47 href=Ciu-IV.htm#Paran onclick="ventana(this.href);return false">
+
+	<AREA name="Araba" onmouseover="writetxt('<b>Arabá (Valle del Rift)</b><BR><I>(Llanura Desértica).</I><LI>&nbsp;</LI>Una de las formaciones geológicas más raras de este planeta es el gran valle de la Grieta. . .')" onmouseout="writetxt(0)" shape=rect coords=624,45,711,56 href=Ciu-IX.htm#Araba onclick="ventana(this.href);return false">
+
+	<AREA name="D1" onmouseover="writetxt('<b>D-1 CUENCA HULEH</b><LI>&nbsp;</LI>Desde el pie del monte Hermón el valle de la Grieta baja rápidamente más de 490 metros (1.600 pies) hasta la región de Huleh, que está aproximadamente al nivel del mar. . .')" onmouseout="writetxt(0)" shape=circle coords=144,138,6 href=Pers-XLVI.htm#Hul-1-1 onclick="ventana(this.href);return false">
+
+	<AREA name="D1" onmouseover="writetxt('<b>D-1 CUENCA HULEH</b><LI>&nbsp;</LI>Desde el pie del monte Hermón el valle de la Grieta baja rápidamente más de 490 metros (1.600 pies) hasta la región de Huleh, que está aproximadamente al nivel del mar. . .')" onmouseout="writetxt(0)" shape=rect coords=624,57,770,67 href=Pers-XLVI.htm#Hul-1-1 onclick="ventana(this.href);return false">
+
+	<AREA name="D3" onmouseover="writetxt('<b>D-3 DISTRITO DEL VALLE DEL JORDÁN (EL GHOR)</b><LI>&nbsp;</LI>A todo este valle que desciende en forma de hondonada también se le llama “el Arabá”. . .')" onmouseout="writetxt(0)" shape=circle coords=316,208,7 href=Ciu-V.htm#JordanD onclick="ventana(this.href);return false">
+
+	<AREA name="D3" onmouseover="writetxt('<b>D-3 DISTRITO DEL VALLE DEL JORDÁN (EL GHOR)</b><LI>&nbsp;</LI>A todo este valle que desciende en forma de hondonada también se le llama “el Arabá”. . .')" onmouseout="writetxt(0)" shape=rect coords=622,75,772,85 href=Ciu-V.htm#JordanD onclick="ventana(this.href);return false">
+
+	<AREA name="D4" onmouseover="writetxt('<IMG src=images/sodoma.jpg class=bild><b>D-4 EL MAR SALADO (MUERTO)</b><LI>&nbsp;</LI>Este es uno de los más notables cuerpos de agua en la faz de la Tierra. Bien se dice que es un mar muerto, porque en él no vive ningún pez, y hay poca vegetación en la orilla. . .')" onmouseout="writetxt(0)" shape=poly coords=467,272,493,266,616,320,595,324,603,334,650,331,669,344,640,354,620,351,644,483,786,482,787,627,507,627,507,561,644,561,644,483,619,350,494,299,467,280 href=Ciu-IX.htm#Salado onclick="ventana(this.href);return false">
+
+	<AREA name="D4" onmouseover="writetxt('<IMG src=images/rollo.jpg class=bild><b>Mar Salado</b><LI>&nbsp;</LI>Una de las designaciones bíblicas del gran lago o mar conocido en la actualidad como el mar Muerto. . .')" onmouseout="writetxt(0)" shape=rect coords=628,85,766,94 href=Ciu-IX.htm#Salado onclick="ventana(this.href);return false">
+
+	<AREA name="D5" onmouseover="writetxt('<IMG src=images/rollo.jpg class=bild><b>D-5 ARABÁ (HACIA EL SUR DESDE EL MAR SALADO)</b><LI>&nbsp;</LI>Esta sección final del valle de la Grieta se extiende hacia el sur por otros 160 kilómetros (100 millas). Casi toda esta región es desértica. . .')" onmouseout="writetxt(0)" shape=circle coords=720,391,7 href=Ciu-IX.htm#Salado-3 onclick="ventana(this.href);return false">
+
+	<AREA name="D5" onmouseover="writetxt('<IMG src=images/rollo.jpg class=bild><b>D-5 ARABÁ (HACIA EL SUR DESDE EL MAR SALADO)</b><LI>&nbsp;</LI>Esta sección final del valle de la Grieta se extiende hacia el sur por otros 160 kilómetros (100 millas). Casi toda esta región es desértica. . .')" onmouseout="writetxt(0)" shape=rect coords=621,93,772,103 href=Ciu-IX.htm#Salado-3 onclick="ventana(this.href);return false">
+
+	<AREA name="E1" onmouseover="writetxt('<b>E1. MONTAÑAS Y MESETAS AL ESTE DEL JORDÁN</b><LI>&nbsp;</LI>“La tierra de los hijos de Ammón” (E-3) está inmediatamente al sur de Galaad, y la mitad de esta fue dada a la tribu de Gad. . .')" onmouseout="writetxt(0)" shape=rect coords=622,102,770,114 href=Ciu-V.htm#JordanM onclick="ventana(this.href);return false">
+
+	<AREA name="E1" onmouseover="writetxt('<b>E1. MONTAÑAS Y MESETAS AL ESTE DEL JORDÁN</b><LI>&nbsp;</LI>“La tierra de los hijos de Ammón” (E-3) está inmediatamente al sur de Galaad, y la mitad de esta fue dada a la tribu de Gad. . .')" onmouseout="writetxt(0)" shape=circle coords=236,115,7 href=Ciu-V.htm#JordanM onclick="ventana(this.href);return false">
+
+	<AREA name="E1" onmouseover="writetxt('<b>E1. MONTAÑAS Y MESETAS AL ESTE DEL JORDÁN</b><LI>&nbsp;</LI>“La tierra de los hijos de Ammón” (E-3) está inmediatamente al sur de Galaad, y la mitad de esta fue dada a la tribu de Gad. . .')" onmouseout="writetxt(0)" shape=rect coords=622,115,770,126 href=Ciu-V.htm#JordanM onclick="ventana(this.href);return false">
+
+	<AREA name="E2" onmouseover="writetxt('<b>E2. MONTAÑAS Y MESETAS AL ESTE DEL JORDÁN</b><LI>&nbsp;</LI>“La tierra de los hijos de Ammón” (E-3) está inmediatamente al sur de Galaad, y la mitad de esta fue dada a la tribu de Gad. . .')" onmouseout="writetxt(0)" shape=circle coords=382,181,7 href=Ciu-V.htm#JordanM onclick="ventana(this.href);return false">
+
+	<AREA name="E2" onmouseover="writetxt('<b>E2. MONTAÑAS Y MESETAS AL ESTE DEL JORDÁN</b><LI>&nbsp;</LI>“La tierra de los hijos de Ammón” (E-3) está inmediatamente al sur de Galaad, y la mitad de esta fue dada a la tribu de Gad. . .')" onmouseout="writetxt(0)" shape=rect coords=622,125,770,136 href=Ciu-V.htm#JordanM onclick="ventana(this.href);return false">
+
+	<AREA name="E3" onmouseover="writetxt('<b>E3. MONTAÑAS Y MESETAS AL ESTE DEL JORDÁN</b><LI>&nbsp;</LI>“La tierra de los hijos de Ammón” (E-3) está inmediatamente al sur de Galaad, y la mitad de esta fue dada a la tribu de Gad. . .')" onmouseout="writetxt(0)" shape=circle coords=676,246,7 href=Ciu-V.htm#JordanM onclick="ventana(this.href);return false">
+
+	<AREA name="E3" onmouseover="writetxt('<b>E3. MONTAÑAS Y MESETAS AL ESTE DEL JORDÁN</b><LI>&nbsp;</LI>“La tierra de los hijos de Ammón” (E-3) está inmediatamente al sur de Galaad, y la mitad de esta fue dada a la tribu de Gad. . .')" onmouseout="writetxt(0)" shape=rect coords=622,133,770,144 href=Ciu-V.htm#JordanM onclick="ventana(this.href);return false">
+
+	<AREA name="E4" onmouseover="writetxt('<b>E4. MONTAÑAS Y MESETAS AL ESTE DEL JORDÁN</b><LI>&nbsp;</LI>“La tierra de los hijos de Ammón” (E-3) está inmediatamente al sur de Galaad, y la mitad de esta fue dada a la tribu de Gad. . .')" onmouseout="writetxt(0)" shape=circle coords=788,342,7 href=Ciu-V.htm#JordanM onclick="ventana(this.href);return false">
+
+	<AREA name="E4" onmouseover="writetxt('<b>E4. MONTAÑAS Y MESETAS AL ESTE DEL JORDÁN</b><LI>&nbsp;</LI>“La tierra de los hijos de Ammón” (E-3) está inmediatamente al sur de Galaad, y la mitad de esta fue dada a la tribu de Gad. . .')" onmouseout="writetxt(0)" shape=rect coords=622,142,770,153 href=Ciu-V.htm#JordanM onclick="ventana(this.href);return false">
+
+	<AREA name="F" onmouseover="writetxt('<b>F. MONTAÑAS DEL LÍBANO</b><LI>&nbsp;</LI>Las montañas del Líbano dominan el panorama de la Tierra Prometida. . .')" onmouseout="writetxt(0)" shape=circle coords=56,77,5 href=Ciu-VII.htm#Libano onclick="ventana(this.href);return false">
+
+	<AREA name="F" onmouseover="writetxt('<b>F. MONTAÑAS DEL LÍBANO</b><LI>&nbsp;</LI>Las montañas del Líbano dominan el panorama de la Tierra Prometida. . .')" onmouseout="writetxt(0)" shape=rect coords=623,152,711,163 href=Ciu-VII.htm#Libano onclick="ventana(this.href);return false">
+
+<!-- 
+<IMG src=images/gabaon.jpg class=bild>
+#E5EBFA color celeste
+rect (168,532,194,545) Coordenadas 168,532 = la esquina superior izquierda, y las coordenadas 194,545 = la esquina inferior derecha.
+circle (488,127,8); 488,127 = punto del centro, 8 = redio. 
+poly (168,532,194,545,168,532,194,545) Todos los picos del area
+-->
+
+<div style="visibility:hidden;"><script type="text/javascript">rmt_ki101('8',130,'2uRWOexfCIq','baff00');</script></div>
+
+</MAP></DIV></TBODY></TABLE></BODY></HTML>
